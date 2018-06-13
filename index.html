@@ -1,0 +1,37 @@
+<head>
+  <title>Dota 2 Pro Circruit Connectivity</title>
+  <link rel="stylesheet" type="text/css" href="css/dpc_index.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<div id="title"></div>
+<div id="nav">
+    <a href="https://github.com/youmikoh/dpc-connectivity/"><img class="nav-img" alt="github" src="img/github.png"></a>
+    <a href="https://beta.observablehq.com/notebooks/public"><img class="nav-img" alt="observable" src="img/observable.png"></a>
+    <a href="http://nbviewer.jupyter.org/github/youmikoh/dpc-connectivity/blob/master/part1_collect.ipynb"><img class="nav-img" alt="python" src="img/python.png"></a>
+</div>
+<div id="graph"></div>
+
+<script type="module">
+  // Load the Observable runtime and inspector.
+  import {Runtime, Inspector} from "https://unpkg.com/@observablehq/notebook-runtime?module";
+
+  // Your notebook, compiled as an ES module.
+  import notebook from "https://api.observablehq.com/@youmikoh/dota-2-pro-circuit-connectivity.js?key=0096b6b3ac3bd9a4";
+
+  // Load the notebook, observing its cells with a default Inspector
+  // that simply renders the value of each cell into the provided DOM node.
+  // Runtime.load(notebook, Inspector.into(document.body));
+
+  const renders = {
+    "title": "#title",
+    "graph": "#graph"
+  };
+
+  Runtime.load(notebook, (variable) => {
+    const selector = renders[variable.name];
+    if (selector) {
+      return new Inspector(document.querySelector(selector));
+    }
+  });
+</script>
