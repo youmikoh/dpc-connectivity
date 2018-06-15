@@ -1,6 +1,4 @@
 <style>
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans|Montserrat:300,500);
-
 #notebook-container {
 -webkit-box-shadow: none;
 box-shadow: none;
@@ -13,11 +11,11 @@ box-shadow: none;
 .rendered_html h5 { font-size: 1.5rem !important; }
 .rendered_html h6 { font-size: 1.5rem !important; }
 
-.rendered_html h1, 
-.rendered_html h2, 
-.rendered_html h3, 
+.rendered_html h1,
+.rendered_html h2,
+.rendered_html h3,
 .rendered_html h4,
-.rendered_html h5, 
+.rendered_html h5,
 .rendered_html h6 {
 font-family: 'Montserrat', sans-serif !important;
 line-height: 0.5em !important;
