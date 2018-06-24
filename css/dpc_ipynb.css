@@ -1,4 +1,6 @@
 <style>
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans|Montserrat:300,500);
+
 #notebook-container {
 -webkit-box-shadow: none;
 box-shadow: none;
@@ -42,4 +44,4 @@ border: none !important;
 background: whitesmoke !important;
 }
 
-<style>
+</style>
