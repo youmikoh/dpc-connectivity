@@ -13,7 +13,7 @@ Visualizing player connectivity in the 2018 Dota 2 pro circuit
 ### Part II - [Stratification](http://nbviewer.jupyter.org/github/youmikoh/dpc-connectivity/blob/master/part2_stratify.ipynb)
 - *Hierarchy*: player ↦ Flag ↦ Region
 - *Connections*: ab ∈ connections ⟺ a.History ∪ b.History > 0
-- *Graph*: G = {V, E} : dpc ↦ V, connections ↦ E
+- *Graph*: G = {V, E} : `dpc` ↦ V, `connections` ↦ E
 
 ## Visualization
 
